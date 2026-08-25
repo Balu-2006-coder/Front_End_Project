@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magic Spoon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .font-display {
+            font-family: 'Fraunces', serif;
+        }
+    </style>
+</head>
+<body class="bg-[#F7F5F0] text-[#21241F]">
+    <header class="z-50 bg-black border-b border-[#3D5A3D]">
+        <nav class="flex items-center justify-between px-5 py-2 md:px-12">
+            <!-- Logo / brand -->
+            <div class="text-center">
+                <a href="#" class="font-display text-2xl italic text-[#F7F5F0] tracking-wide">
+                    Magic Spoon
+                    <div class="w-70 h-[2px] bg-[#E8C264] mx-auto my-2">
+                    </div> </a>
+                <a href="#" class="font-display text-sm italic text-[#F7F5F0] tracking-wide">
+                    RESTAURANT  </a>
+            </div>
+            <!--Nav bar-->
+            <div class="hidden md:flex items-center px-20 space-x-10 font-['caudex']">
+                <a href="D:\basic\Project\home.html" class="text-xl font-medium text-[#E8DCC4] hover:text-[#4cc2d4] transition duration-200"> Home</a>
+                <a href="D:\basic\Project\entertainment.html"class="text-xl font-medium text-[#E8DCC4] hover:text-[#4cc2d4] transition duration-200">Entertainment & Events </a>
+                <a href="D:\basic\Project\menu.html"class="text-xl font-medium text-[#E8DCC4] hover:text-[#4cc2d4] transition duration-200">Menu</a>
+                <a href="#"class="text-xl font-medium text-[#E8DCC4] hover:text-[#4cc2d4] transition duration-200">PrivateDining & Corporate Bookings</a>
+                <a href="D:\basic\Project\reservations.html"class="text-xl font-medium text-[#E8DCC4] hover:text-[#4cc2d4] transition duration-200">Reservations</a>
+            </div>
+        </nav>
+    </header>
+    <section class="relative h-[80vh] w-full overflow-hidden">
+        <input type="radio" name="slide" id="s1" checked class="hidden peer/s1">
+        <input type="radio" name="slide" id="s2"  class="hidden peer/s2">
+        <input type="radio" name="slide" id="s3" class="hidden peer/s3">
+        <div class="flex w-[300%] h-full transition-transform duration-1000 ease-in-out
+                    peer-checked/s1:translate-x-0
+                    peer-checked/s2:-translate-x-1/3
+                    peer-checked/s3:-translate-x-2/3">
+            <div class="w-full h-full relative">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm5ENz8mWVWKHjc6Oc95lDvUHt-KEX4IwA3FchVeVNwg&s=10"class="w-full h-full bg-cover">
+            </div>
+            <div class="w-full h-full relative">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvqwx8oMuzFd-_TjQ4pWyEHzR1t1sutyDUskP8_M24DA&s=10"   class="w-full h-full bg-cover ">
+            </div>
+            <div class="w-full h-full relative">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXbrZzCBOLg5B_x2WWDMgBBQHYdhPkAd0xZBsGTyCu2g&s=10"class="w-full h-full bg-cover">
+            </div>
+        </div>
+        <div class="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-2 z-10
+                    peer-checked/s1:[&>label:nth-child(1)]:bg-white
+                    peer-checked/s2:[&>label:nth-child(2)]:bg-white
+                    peer-checked/s3:[&>label:nth-child(3)]:bg-white">
+            <label for="s1" class="w-3 h-3 rounded-full bg-white/60 cursor-pointer"></label>
+            <label for="s2" class="w-3 h-3 rounded-full bg-white/60 cursor-pointer"></label>
+            <label for="s3" class="w-3 h-3 rounded-full bg-white/60 cursor-pointer"></label>
+        </div>
+    </section>  
+       <section class="h-[960vh] bg-black py-12  md:py-10">
+       <div class="text-left px-40 font-['caudex']">
+             <p class="text-3xl sm:text-5xl md:text-4xl font-bold text-[#00BFFF] hover:text-white transition duration-200">Food Menu</p>
+            <div class="text-right px-10 -my-10 font-['caudex']">
+            <p class="text-3xl sm:text-5xl md:text-4xl font-bold text-[#00BFFF] hover:text-white transition duration-200">Cocktails Menu</p>
+       </div>
+    </div>   
+    <div class="mt-10 md:mt-20 sm:px-8">
+        <div
+            class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 gap-2 text-center font-['caudex']">
+             <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/373f40_ce6723bfdb7b4f289f3bc435a2cf5ea3~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/373f40_ce6723bfdb7b4f289f3bc435a2cf5ea3~mv2.jpg"alt="" class="">
+                    <h3 class="text-3xl font-bold mb-5">Smoked Steelhead Tartare Cones​</h3>
+                    <p class=" font-Semibold mb-4"> Diced smoked steelhead blended with roasted shishito-mayo and guacamole, served in petite waffle cones. </p>
+            </div>            
+             <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/373f40_e92f1a546ec342068b58cbe213fa2f9e~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/373f40_e92f1a546ec342068b58cbe213fa2f9e~mv2.jpg"alt="" class="">
+                    <h3 class="text-2xl font-bold mb-5"> Truffled Edamame</h3>
+                    <p class=" font-Semibold mb-4"> Lightly seasoned with sea salt and fresh-cracked black pepper, then finished with a delicate touch of truffle essence. </p>
+            </div>
+             <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/cd3bb3_6f097563441949e7a4324e2feb123ea1~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cd3bb3_6f097563441949e7a4324e2feb123ea1~mv2.jpg"  alt="" class="">
+                    <h3 class="text-2xl font-bold mb-5"> Blue Velvet </h3>
+                    <p class=" font-Semibold mb-4"> Johnny Walker Blue Label, egg white, simple, lemon garnished with lemon zest and a cherr </p>
+            </div>
+            <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/cd3bb3_7387ed744a184b5c9746274accf6ebf8~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cd3bb3_7387ed744a184b5c9746274accf6ebf8~mv2.jpg" alt="" class="">
+                    <h3 class="text-2xl font-bold mb-5"> Old Fashioned</h3>
+                    <p class=" font-Semibold mb-4">
+                        Bulleit bourbon, raw sugar, Angostura bitters finished with an expressed orange peel and a brandied cherry
+                    </p>
+            </div>
+                    <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/373f40_61022b3467174636ae9d811ce8571115~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/373f40_61022b3467174636ae9d811ce8571115~mv2.jpg" alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Dumplings d’Edamame with Ponzu Essence</h3>
+                    <p class=" font-Semibold mb-4">
+                        Pan-seared edamame dumplings, finished with a delicate ponzu essence and topped with fresh microgreens
+                    </p>
+            </div>            
+            <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/373f40_26ec153dbb774d6a916d1c4bb65d2be7~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/373f40_26ec153dbb774d6a916d1c4bb65d2be7~mv2.jpg"alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Truffle Bliss Fries</h3>
+                    <p class=" font-Semibold mb-4">
+                        Golden, crispy fries tossed in fragrant truffle oil and sprinkled with Parmesan and fresh herbs.
+                    </p>
+            </div>
+            <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/cd3bb3_7f27a52b4ed148269adee556a0270385~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cd3bb3_7f27a52b4ed148269adee556a0270385~mv2.jpg"alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Birthday Special</h3>
+`                    <p class=" font-Semibold mb-4">
+                          A one-of-a-kind creation crafted by our bartenders,made just for your celebration.
+                    </p>
+            </div>
+            <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/cd3bb3_316a4031ec054ae78a4ebe706104e3fe~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cd3bb3_316a4031ec054ae78a4ebe706104e3fe~mv2.jpg" alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Cucumber Sun</h3>
+                    <p class=" font-Semibold mb-4">
+                        Casamigos Blanco, muddled cucumber, mango, guava, and lemon garnished with a Tajin rim
+                    </p>
+            </div>
+           <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/373f40_c777c399ecee4e7fb9fc4f18eeca8fd3~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/373f40_c777c399ecee4e7fb9fc4f18eeca8fd3~mv2.jpg"alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Truffle-Kissed Sweet Potato Medley</h3>
+                    <p class=" font-Semibold mb-4">
+                         A vibrant trio of roasted sweet potatoes drizzled with truffle oil and topped with a plum powder
+                    </p>
+            </div>
+           <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/373f40_5dd4c8475f6e4c569faafe8b0e527abb~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/373f40_5dd4c8475f6e4c569faafe8b0e527abb~mv2.jpg"alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Moonlight Gyoza</h3>
+                    <p class=" font-Semibold mb-4">
+                       Pan-seared chicken dumplings served with a black vinegar-chili dip — delicate yet bold.
+                    </p>
+            </div>
+            <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/cd3bb3_5e929ad474d1491a963c665cdaae2cf9~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cd3bb3_5e929ad474d1491a963c665cdaae2cf9~mv2.jpg"alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Smoked Rye Old Fashion</h3>
+                    <p class=" font-Semibold mb-4">
+                       Woodinville Whiskey Rye, cherry bitters, sugar, bitters garnished with orange peel and Luxardo cherry
+                    </p>
+            </div>
+            <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/cd3bb3_d66b191ade754eb693c79b8a552e3479~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cd3bb3_d66b191ade754eb693c79b8a552e3479~mv2.jpg"alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Jalisco 77</h3>
+                    <p class=" font-Semibold mb-4">
+                        Casamigos Blanco, lemon, muddled pepper and limes, fresh agave topped with Prosecco
+                    </p>
+            </div>
+        </div>
+     </div>              
+          <div class="text-left px-40 font-['caudex']">
+             <p class="text-3xl sm:text-5xl md:text-4xl mt-5 font-bold text-[#00BFFF] hover:text-white transition duration-200">Appetizers</p>
+          </div>      
+   <div class="mt-10 md:mt-10 sm:px-8">
+        <div
+            class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 gap-2 text-center font-['caudex']">
+                    <div class=" bg-white shadow-lg  p-4">
+                    <img src="https://static.wixstatic.com/media/373f40_e764b2d513624f9f8bdee4627acf43c1~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/373f40_e764b2d513624f9f8bdee4627acf43c1~mv2.jpg" alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Roasted Sesame House Salad</h3>
+                    <p class=" font-Semibold mb-4">
+                        Mixed greens, crunchy onion, bacon, dried berries, mixed seeds. Add chicken or shrimp
+                    </p>
+            </div>          
+             <div class=" bg-white shadow-lg  p-4">
+                    <img src="https://static.wixstatic.com/media/373f40_4497fdc815aa43bd8aa6194d20161739~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/373f40_4497fdc815aa43bd8aa6194d20161739~mv2.jpg"alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Golden Tater Cubes de Canard</h3>
+                    <p class=" font-Semibold mb-4">
+                        Crispy cubes of taters infused with bacon, drizzled with duck fat and finished with garlic snow​
+                    </p>
+            </div>
+             <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/cd3bb3_3cfb3bd1d66f4fb295bd77d33d3db078~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cd3bb3_3cfb3bd1d66f4fb295bd77d33d3db078~mv2.jpg"alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Blueberry Spritz</h3>
+                    <p class=" font-Semibold mb-4">
+                        Smirnoff Blueberry vodka, lemon, sparkling wine
+                    </p>
+            </div>
+             <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/cd3bb3_18a8276660f645988f81f035970a499b~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cd3bb3_18a8276660f645988f81f035970a499b~mv2.jpg"alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Riding Mango</h3>
+                    <p class=" font-Semibold mb-4">
+                         Hennessy VS, orange liqueur, lemon, mango
+                    </p>
+            </div>
+                     <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/373f40_04cebf5144e540e4aeae0307224d8059~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/373f40_04cebf5144e540e4aeae0307224d8059~mv2.jpg"alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Cream-baked Potato Melange</h3>
+                    <p class=" font-Semibold mb-4">
+                          Scalloped potatoes, cheddar jack cheese aged 18-month Parma Ham (product of Italy)          
+                    </p>
+            </div>
+            <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/373f40_c7f9d07400f44a77a4664ca558d7add6~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/373f40_c7f9d07400f44a77a4664ca558d7add6~mv2.jpg" alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Grilled Shrimp au Peche Epicee</h3>
+                    <p class=" font-Semibold mb-4">
+                         Char-grilled shrimp glazed with a hot pepper peach reduction.
+                    </p>
+            </div>
+            <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/cd3bb3_553e89f99d674b21a94229f55f7d1189~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cd3bb3_553e89f99d674b21a94229f55f7d1189~mv2.jpg "alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">New Orleans Margarita</h3>
+                    <p class=" font-Semibold mb-4">
+                         Casamigos reposado, agave, New Orleans best-kept secret citrus blend, garnished with a lime
+                    </p>
+            </div>
+            <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/cd3bb3_9444671327904633870f2a80e1f68e56~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cd3bb3_9444671327904633870f2a80e1f68e56~mv2.jpg"alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Coco Loco</h3>
+                    <p class=" font-Semibold mb-4">
+                         Ketel One Vodka, coconut juice, and muddled lime
+                    </p>
+            </div>
+            <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/373f40_51c3b6ae76ba4e258faf117f7973f343~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/373f40_51c3b6ae76ba4e258faf117f7973f343~mv2.jpg"alt=""class="">
+
+                    <h3 class="text-2xl font-bold mb-5">
+                       Ribeye Eclat’s
+                    </h3>
+
+                    <p class=" font-Semibold mb-4">
+                         Certified Angus Beef Ribeye, organic black pepper Mushroom Sauce
+                    </p>
+            </div>
+            <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/373f40_020fa43458aa40c6a4656e89d9dab625~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/373f40_020fa43458aa40c6a4656e89d9dab625~mv2.jpg"alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Scallops on A Cloud</h3>
+                    <p class=" font-Semibold mb-4">
+                        Golden- seared scallops served atop creamy mashed potatoes, finished with a touch of velvety sauce 
+                    </p>
+            </div>
+            <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/cd3bb3_bca69379854a41d2b4d6a14d641a4b7b~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cd3bb3_bca69379854a41d2b4d6a14d641a4b7b~mv2.jpg"alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Espresso Martini</h3>
+                    <p class=" font-Semibold mb-4">
+                         Ketel One vodka, hazelnut liqeur, Bailey’s, topped with the essential 3 beans that represent health, wealth and happiness 
+                    </p>
+            </div>
+        </div>
+    </div>  
+       <div class="text-left px-40 my-8 font-['caudex']">
+             <p class="text-3xl sm:text-5xl md:text-4xl font-bold text-[#00BFFF] hover:text-white transition duration-200">Entrees</p>
+            <div class="text-right px-10 -my-10 font-['caudex']">
+            <p class="text-3xl sm:text-5xl md:text-4xl font-bold text-[#00BFFF] hover:text-white transition duration-200">Mocktails</p>
+       </div>
+    </div>   
+    <div class="mt-10 md:mt-20 sm:px-8">
+        <div
+            class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 gap-2 text-center font-['caudex']">
+             <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/373f40_9bdb4e1fa6774ff6b211be0391532083~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/373f40_9bdb4e1fa6774ff6b211be0391532083~mv2.jpg"alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Wagyu Ragu Gnocchi</h3>
+                    <p class=" font-Semibold mb-4">
+                      Pillowy potato gnocchi in a slow-cooked Sichuan-inspired Snake River Farms Wagyu beef ragu, finished with chili crisp and fresh basil   
+                    </p>
+            </div>
+             <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/373f40_8053b01332ee44d89390f76714fc13a0~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/373f40_8053b01332ee44d89390f76714fc13a0~mv2.jpg" alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Tres Amigos</h3>
+                    <p class=" font-Semibold mb-4">
+                       Three Corn tacos, filled with your choice of tender carne asada, Juicy chicken, or savory pork, topped with sauteed onions. Served with fresh cilantro, a wedge of lime, and a side of house-made salsa  
+                    </p>
+            </div>
+             <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/cd3bb3_6e8e2e69cb4d4cc9a206c467cdebf70b~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cd3bb3_6e8e2e69cb4d4cc9a206c467cdebf70b~mv2.jpg"alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Fresca</h3>
+                    <p class=" font-Semibold mb-4">
+                      Lemon, lime, orange, mango puree, sprite, soda, garnished with orange wheel   
+                    </p>
+            </div>
+             <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/cd3bb3_3cedc4d759fc4791a57f5459c0747bb1~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cd3bb3_3cedc4d759fc4791a57f5459c0747bb1~mv2.jpg"alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Creamsicle</h3>
+                    <p class=" font-Semibold mb-4">
+                         Coconut cream puree, pineapple juice, orange, garnished with cherry
+                    </p>
+            </div>
+             <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/373f40_a9e3ce67c94d44a489e8de7125c7bb2f~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/373f40_a9e3ce67c94d44a489e8de7125c7bb2f~mv2.jpg"alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Orzo Symphony (V)</h3>
+                    <p class=" font-Semibold mb-4">
+                       Orzo in a mushroom reduction sauce, paired with sauteed seasonal vegetables, and crispy salt & pepper tofu offering a rich and flavorful vegetarian delight. (vegetarian)    
+                    </p>
+            </div>
+             <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/373f40_015d6f34546540afaae9fd5f2cdbbbf2~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/373f40_015d6f34546540afaae9fd5f2cdbbbf2~mv2.jpg"alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Mekong River Rotisserie Chicken</h3>
+                    <p class=" font-Semibold mb-4">
+                      Grilled chicken served atop silky french-style mashed, sauteed vegetables in a black pepper mushroom sauce   
+                    </p>
+            </div>
+             <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/cd3bb3_b557d2bfd3b24905928d038c765f0f6f~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cd3bb3_b557d2bfd3b24905928d038c765f0f6f~mv2.jpg"alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Cucumber Spritz</h3>
+                    <p class=" font-Semibold mb-4">
+                         Muddled cucumber, strawberry, coconut water, club soda,garnished with fresh cucumber slice
+                    </p>
+            </div>
+             <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/cd3bb3_6e75169daf0d44f1948c87f5f1837d00~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cd3bb3_6e75169daf0d44f1948c87f5f1837d00~mv2.jpg"alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Ginger Fizz</h3>
+                    <p class=" font-Semibold mb-4">
+                       Ginger, lemon juice, mango puree, and sprite, garnished with cherry  
+                    </p>
+            </div>
+            <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/373f40_bed672a1c28c4d22bc4e8f88adeec15c~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/373f40_bed672a1c28c4d22bc4e8f88adeec15c~mv2.jpg"alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">Butcher`s cut & Orzo Duet</h3>
+                    <p class=" font-Semibold mb-4">
+                          Butchers cut Certified Angus Beef ribeye with black pepper mushroom sauce paired with Truffle cheese orzo and sauteed vegetables  
+                    </p>
+            </div>
+            <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/373f40_a8485845b9334c38892af7f1d742b696~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/373f40_a8485845b9334c38892af7f1d742b696~mv2.jpg"alt=""class="">
+                    <h3 class="text-2xl font-bold mb-5">
+                       Butcher`s Surf and Turf
+                    </h3>
+
+                    <p class=" font-Semibold mb-4">
+                       Butcher's cut Certified Angus Beef Ribeye with black pepper mushroom sauce paired with truffle cheese orzo and grilled shrimp.    
+                    </p>
+            </div>
+
+            <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/cd3bb3_e6782a2a4c3946d88caf9e9dcbdc796e~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cd3bb3_e6782a2a4c3946d88caf9e9dcbdc796e~mv2.jpg"
+                         alt=""
+                         class="">
+
+                    <h3 class="text-2xl font-bold mb-5">
+                        Golden Crispy Harmony
+                    </h3>
+
+                    <p class=" font-Semibold mb-4">
+                       Crispy golden egg rolls filled with a savory medley of edamame carrots cabbage, onions, and leeks, served alongside buttery French mashed potatoes and seasonal sauteed vegetables    
+                    </p>
+            </div>
+            <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/373f40_d2bf173f5ef84adabb11f7ed9a824aa3~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/373f40_d2bf173f5ef84adabb11f7ed9a824aa3~mv2.jpg"
+                         alt=""
+                         class="">
+                    <h3 class="text-2xl font-bold mb-5">
+                        Pacific Smoked Salad
+                    </h3>
+                    <p class=" font-Semibold mb-4">
+                         Fresh mixed greens tossed with crispy onions, smoky bacon, and sweet dried berries, finished with mixed seeds and delicate smoked salmon for a savory-sweet balance and satisfying crunch  
+                    </p>
+            </div>
+            <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/373f40_105dcdbff1fd4117a6481c6477dbe432~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/373f40_105dcdbff1fd4117a6481c6477dbe432~mv2.jpg"
+                         alt=""
+                         class="">
+                    <h3 class="text-2xl font-bold mb-5">
+                       Scallops & Shrimp a la Peach
+                    </h3>
+                    <p class=" font-Semibold mb-4">
+                       Golden-seared scallops and char-grilled shrimp served over creamy mashed potatoes, finished with a velvety hot-pepper peach reduction for a perfect balance of sweet heat and rich coastal flavor    
+                    </p>
+            </div>
+           </div>
+        </div>
+         <div class="text-left px-40 mt-10 font-['caudex']">
+             <p class="text-3xl sm:text-5xl md:text-4xl font-bold text-[#00BFFF] hover:text-white transition duration-200">Late Night Menu</p>
+         </div>       
+           <div class="text-right px-40 -my-10 mx-20 font-['caudex']">
+             <p class="text-3xl sm:text-5xl md:text-4xl font-bold text-[#00BFFF] hover:text-white transition duration-200">Desserts</p>
+         </div> 
+    <div class="mt-10 md:mt-20 sm:px-8">
+        <div
+            class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 gap-2 text-center font-['caudex']">
+
+             <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/cd3bb3_52585efbdd2b4c86a708e78d7699c6ff~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cd3bb3_52585efbdd2b4c86a708e78d7699c6ff~mv2.jpg "
+                         alt=""
+                         class="">
+                    <h3 class="text-2xl font-bold mb-5">
+                       Formosa Popcorn Chicken
+                    </h3>
+                    <p class=" font-Semibold mb-4">
+                        Basil-fried Taiwanese chicken with a chili-aioli drizzle — crispy, juicy, and  dangerously addicting.</p>
+            </div>
+             <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/cd3bb3_900e91c2a6f44470b8147dd5cd4d9fa5~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cd3bb3_900e91c2a6f44470b8147dd5cd4d9fa5~mv2.jpg"
+                         alt=""
+                         class="">
+                    <h3 class="text-2xl font-bold mb-5">
+                       Royale Nachos
+                    </h3>
+                    <p class=" font-Semibold mb-4">
+                    Crispy tortilla chips covered in melted cheese and topped with fresh guacamore, zesty pico de gallo, jalapeños, beans, and your choice of ribeye steak, chicken, or pork. Served with sour cream on the side.
+                    </p>
+            </div>
+                <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/cd3bb3_607dbd607af442f79c58298d4c01078c~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cd3bb3_607dbd607af442f79c58298d4c01078c~mv2.jpg"
+                         alt=""
+                         class="">
+                    <h3 class="text-2xl font-bold mb-5">
+                       French Macrons
+                    </h3>
+                   <p class=" font-Semibold mb-4">
+                     Delicate almond meringue confections with assorted ganache, buttercream, and fruit fillings
+                    </p>
+            </div>     
+            <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/cd3bb3_84665ad40a5e4432a6dafa93f90bf59f~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cd3bb3_84665ad40a5e4432a6dafa93f90bf59f~mv2.jpg"
+                         alt=""
+                         class="">
+                    <h3 class="text-2xl font-bold mb-5">
+                       New York Style Cheese Cake
+                    </h3>
+                    <p class=" font-Semibold mb-4">
+                    Traditional New York style creamy cheesecake.
+                    </p>
+            </div>
+             <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/373f40_aad63f21f5714635812d202169e09fda~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/373f40_aad63f21f5714635812d202169e09fda~mv2.jpg"
+                         alt=""
+                         class="">
+                    <h3 class="text-2xl font-bold mb-5">
+                        Truffle Bliss Fries
+                    </h3>
+                    <p class=" font-Semibold mb-4">
+                       Hand-cut fries tossed in white truffle oil, parmesan, and chive dust — pure indulgence.
+                    </p>
+            </div>
+             <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/373f40_6ae0c938d5194e6499ed11d0debec0ba~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/373f40_6ae0c938d5194e6499ed11d0debec0ba~mv2.jpg"
+                         alt=""
+                         class="">
+                    <h3 class="text-2xl font-bold mb-5">
+                       Golden Yam Frites
+                    </h3>
+                    <p class=" font-Semibold mb-4">
+                    Sweet yam fries dusted with tangy plum powder —nostalgia with a twist.
+                    </p>
+            </div>
+            <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/cd3bb3_67af69508d3f4745a4db25468fe54952~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cd3bb3_67af69508d3f4745a4db25468fe54952~mv2.jpg"
+                         alt=""
+                         class="">
+                    <h3 class="text-2xl font-bold mb-5">
+                       Chocolate Mousse Cake
+                    </h3>
+                    <p class=" font-Semibold mb-4">
+                    Decadent chocolate cake layered with whipped chocolate mousse and topped with a smooth ganache drizzle
+                    </p>
+            </div>
+            <div class=" bg-white shadow-lg p-4">
+                    <img src="https://media.istockphoto.com/id/959868924/photo/yogurt-with-granola-berry-fruits-and-chocolate.webp?a=1&b=1&s=612x612&w=0&k=20&c=5p6RavHW8diLyqF8jSl5_WUHwMeqI3gRCZw8tms5qsU="
+                         alt=""
+                         class="">
+                    <h3 class="text-2xl font-bold mb-5">
+                       Berry Yogurt Granola Parfait
+                    </h3>
+                    <p class=" font-Semibold mb-4">
+                      Creamy yogurt layered with crunchy granola, fresh mixed berries, and chocolate pieces.
+                    </p>
+            </div>
+             <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/373f40_5dd4c8475f6e4c569faafe8b0e527abb~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/373f40_5dd4c8475f6e4c569faafe8b0e527abb~mv2.jpg"
+                         alt=""
+                         class="">
+                    <h3 class="text-2xl font-bold mb-5">
+                       Moonlight Gyoza
+                    </h3>
+                    <p class=" font-Semibold mb-4">
+                    Pan-seared chicken dumplings served with a black vinegar-chili dip — delicate yet bold.
+                    </p>
+            </div>
+             <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/373f40_4497fdc815aa43bd8aa6194d20161739~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/373f40_4497fdc815aa43bd8aa6194d20161739~mv2.jpg"
+                         alt=""
+                         class="">
+                    <h3 class="text-2xl font-bold mb-5">
+                       Golden Tater cubes de Canard
+                    </h3>
+                    <p class=" font-Semibold mb-4">
+                     Crispy cubes of taters infused with bacon, drizzled with duck fat, and finished with garlic snow
+                    </p>
+            </div>
+             <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/cd3bb3_2f71efd64c3b4c26b89e913ed270ac0c~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cd3bb3_2f71efd64c3b4c26b89e913ed270ac0c~mv2.jpg"
+                         alt=""
+                         class="">
+                    <h3 class="text-2xl font-bold mb-5">
+                       Dos Amigos
+                    </h3>
+                    <p class=" font-Semibold mb-4">
+                    Two Corn tacos, filled with your choice of tender carne asada, Juicy chicken, or savory pork, topped with sauteed onions. Served with fresh cilantro, a wedge of lime, and a side of house-made salsa
+                    </p>
+            </div>
+             <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/cd3bb3_5fdb477275ae4a8bb99433820003d3e9~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cd3bb3_5fdb477275ae4a8bb99433820003d3e9~mv2.jpg"
+                         alt=""
+                         class="">
+                    <h3 class="text-2xl font-bold mb-5">
+                       Northwest Lox Delight
+                    </h3>
+                    <p class=" font-Semibold mb-4">
+                    A perfectly toasted bagel topped with silky cream cheese, rich smoked steelhead, briny capers, and fresh avocado slices
+                    </p>
+            </div>
+             <div class=" bg-white shadow-lg p-4">
+                    <img src="https://static.wixstatic.com/media/cd3bb3_508f5032e41b46bda3fdf18cecda42b2~mv2.jpg/v1/fill/w_287,h_186,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/cd3bb3_508f5032e41b46bda3fdf18cecda42b2~mv2.jpg"
+                         alt=""
+                         class="">
+                    <h3 class="text-2xl font-bold mb-5">
+                       Chips, Salsa, and Fresh Guacamole
+                    </h3>
+                    <p class=" font-Semibold mb-4">
+                      Crispy tortilla chips served with our freshly made salsa and a side of house guacamole, prepared from scratch every day.
+                    </p>
+            </div>
+        </div>
+    </div>
+  </section>
+    <hr>
+     <footer id="contact" class="bg-black text-[#E8DCC4] pt-5 pb-8 px-6 md:px-20">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+      <div>
+        <p class="font-display text-sm text-[#00FFFF] mb-3">THE MAGIC'S EXPERIENCE</p>
+       <div class="flex flex-col space-y-3 text-sm">
+                    <a href="D:\basic\Project\menu.html" class="hover:text-[#D4A24C] transition duration-200">Menu</a>
+                    <a href="D:\basic\Project\reservations.html" class="hover:text-[#D4A24C] transition duration-200">Reservations</a>
+                    <a href="D:\basic\Project\entertainment.html" class="hover:text-[#D4A24C] transition duration-200">Entertainment & Events </a>
+                    <a href="D:\basic\Project\private-dining.html" class="hover:text-[#D4A24C] transition duration-200">Private Dinning</a>
+                    <a href="D:\basic\Project\gallery.html" class="hover:text-[#D4A24C] transition duration-200">Gallery</a>
+                </div> 
+      </div>
+      <div>
+        <p class="font-display text-xs uppercase tracking-[0.2em] text-[#00FFFF] font-semibold mb-4">HELP</p>
+        <div class="flex flex-col space-y-3 text-sm">
+          <a href="D:\basic\Project\about.html" class="hover:text-[#D4A24C] transition duration-200">About</a>
+          <a href="#" class="hover:text-[#D4A24C] transition duration-200">Offers & Specials</a>
+          <a href="#" class="hover:text-[#D4A24C] transition duration-200">Blog & News</a>
+          <a href="#" class="hover:text-[#D4A24C] transition duration-200">FAQ</a>
+          <a href="D:\basic\Project\empolyment.html" class="hover:text-[#D4A24C] transition duration-200">Employment Opportunities</a>  
+        </div>
+      </div>
+     <div>
+        <p class="font-display text-xs uppercase tracking-[0.2em] text-[#00FFFF] font-semibold mb-4">GET IN TOUCH</p>
+        <div class="flex flex-col space-y-3 text-sm text-[#E8DCC4]/70">
+           <p>425-425-4765</p> 
+           <p>1020 Road Way NE,Londan, WA 98004</p>
+          <p>hello@Magicspoon.com</p>
+          <a href="#" class="hover:text-[#D4A24C] transition duration-200">Contact US→</a>
+        </div>
+      </div>
+    </div>
+    <!-- Bottom bar -->
+    <div class="max-w-6xl mx-auto border-t border-[#3D5A3D]/40 pt-6
+                flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-[#E8DCC4]/60">© 2026 Magic's Road</p>
+      <div class="flex space-x-6 text-xs">
+        <a href="#" class="hover:text-[#D4A24C] transition duration-200">Instagram</a>
+        <a href="#" class="hover:text-[#D4A24C] transition duration-200">YouTube</a>
+        <a href="#" class="hover:text-[#D4A24C] transition duration-200">Newsletter</a>
+      </div>
+    </div>
+  </footer>
+</body> 	
+</html>
